@@ -24,6 +24,7 @@ public class HW2_Task5 {
         System.out.println("New phrase is: " +phrase.concat(" "+add));
 
         // d) Check via boolean if the phrase "I love Java" is of type String
-
+        String text = "I love Java";
+        System.out.println(text instanceof String); // returns true
     }
 }
