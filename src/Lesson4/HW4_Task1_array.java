@@ -11,10 +11,18 @@ public class HW4_Task1_array {
         System.out.println("Enter a number of elements in array: ");
         int n = input.nextInt();
         int[] array = new int[n];
-        for (int i=0; i < array.length; i++) {
-            System.out.println("Enter the element of array: ");
+        System.out.println("Enter the elements of array: ");
+        for (int i = 0; i < array.length; i++) {
             array[i] = input.nextInt();
         }
+        System.out.print("Original array: ");
         System.out.println(Arrays.toString(array));
+
+        //Loop through the array in reverse order
+        System.out.print("Array in reverse order: ");
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
+        }
+
     }
 }
